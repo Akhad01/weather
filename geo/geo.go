@@ -19,7 +19,6 @@ func GetMyLocation(city string) (*GeoData, error) {
 	}
 
 	resp, err := http.Get("http://ip-api.com/json")
-
 	if err != nil {
 		return nil, err
 	}
